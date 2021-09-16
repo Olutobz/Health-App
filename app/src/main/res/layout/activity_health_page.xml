@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e0e0e0"
-    tools:context=".MedicalPage">
+    tools:context=".HealthPage">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -24,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@drawable/text_border"
-        android:text="Med App"
+        android:text="Health App"
         android:textColor="#fff"
         android:textSize="22sp"
         android:textStyle="bold" />
