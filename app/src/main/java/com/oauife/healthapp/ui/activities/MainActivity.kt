@@ -1,11 +1,12 @@
-package com.oauife.healthapp
+package com.oauife.healthapp.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.oauife.healthapp.R
 
-class HealthPage : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_health_page)
+        setContentView(R.layout.activity_main)
     }
 }

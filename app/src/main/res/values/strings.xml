@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Health App</string>
-    <string name="pmcrg">\@pmcrg</string>
-    <string name="message">By using this application, you agree to our Terms and Conditions for this service, as well as our Privacy Policies.</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">E-Health</string>
+    <string name="image_doctor">Nurse Image</string>
+    <string name="text_sign_up_description">Sign up to the best health emergency app to track your health, get health tips and get the services of medical professionals.</string>
+    <string name="eclipse_image">Eclipse Image</string>
+    <string name="next">Next</string>
+    <string name="text_splash_info">Track your health, get connected to the best specialist within the shortest distance from you.</string>
+    <string name="text_splash_header">The best in managing your health!</string>
 </resources>
