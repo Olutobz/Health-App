@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">E-Health</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="image_doctor">Nurse Image</string>
     <string name="text_sign_up_description">Sign up to the best health emergency app to track your health, get health tips and get the services of medical professionals.</string>
     <string name="eclipse_image">Eclipse Image</string>
