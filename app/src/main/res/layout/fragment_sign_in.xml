@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SignInFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -13,7 +14,7 @@
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:context=".ui.fragments.UserPageFragment">
+            tools:context=".MainActivity">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -114,24 +115,7 @@
             android:background="@drawable/border_auth"
             android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="23dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginTop="24dp"
-                android:id="@+id/name"
-                android:hint="Full Name"
-                app:hintTextColor="#fa7f27"
-                android:textColorHint="#fa7f27"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border_auth"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -141,7 +125,6 @@
                 android:layout_marginTop="24dp"
                 android:id="@+id/email"
                 android:hint="E-Mail"
-                android:inputType="textEmailAddress"
                 app:hintTextColor="#fa7f27"
                 android:textColorHint="#fa7f27"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -149,25 +132,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/border_auth"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="23dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp"
-                android:id="@+id/phone"
-                android:hint="NIN (Optional)"
-                app:hintTextColor="#fa7f27"
-                android:textColorHint="#fa7f27"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
                     android:background="@drawable/border_auth"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -177,6 +142,7 @@
                 android:layout_marginRight="23dp"
                 android:layout_marginLeft="23dp"
                 android:layout_marginBottom="24dp"
+                android:layout_marginTop="10dp"
                 android:id="@+id/work_institute"
                 app:passwordToggleEnabled="true"
                 android:hint="Password"
@@ -199,11 +165,11 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
-            android:text="Sign Up"
+            android:background="@drawable/green_rounded_border"
+            android:text="Login"
             android:fontFamily="@font/boboto_bold"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
-            android:background="@drawable/green_rounded_border"/>
+            android:textColor="#ffffff" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -215,7 +181,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have an account?"
+                android:text="I don't have an account?"
                 android:fontFamily="@font/boboto_bold"
                 android:textAlignment="gravity"
                 android:textColor="#33cc99"
@@ -226,7 +192,7 @@
                 android:layout_height="18dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/button_border"
-                android:text="Log in"
+                android:text="Sign Up"
                 android:textSize="12dp"
                 android:fontFamily="@font/boboto_bold"
                 android:textAllCaps="false"

@@ -13,7 +13,7 @@
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:context=".ui.fragments.UserPageFragment">
+            tools:context=".ui.fragments.SpecialistPageFragment">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -158,9 +158,27 @@
                 android:layout_marginRight="23dp"
                 android:layout_marginLeft="23dp"
                 android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp"
                 android:id="@+id/phone"
-                android:hint="NIN (Optional)"
+                android:hint="Profession"
+                app:hintTextColor="#fa7f27"
+                android:textColorHint="#fa7f27"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_auth"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:id="@+id/health_number"
+                android:hint="ID Number"
                 app:hintTextColor="#fa7f27"
                 android:textColorHint="#fa7f27"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -178,10 +196,28 @@
                 android:layout_marginLeft="23dp"
                 android:layout_marginBottom="24dp"
                 android:id="@+id/work_institute"
-                app:passwordToggleEnabled="true"
-                android:hint="Password"
+                android:hint="Work Institute"
                 app:hintTextColor="#fa7f27"
                 android:textColorHint="#fa7f27"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_auth"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="Password"
+                android:layout_marginRight="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="24dp"
+                app:hintTextColor="#fa7f27"
+                android:textColorHint="#fa7f27"
+                app:passwordToggleEnabled="true"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -199,11 +235,11 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
+            android:background="@drawable/green_rounded_border"
             android:text="Sign Up"
             android:fontFamily="@font/boboto_bold"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
-            android:background="@drawable/green_rounded_border"/>
+            android:textColor="#ffffff" />
 
         <LinearLayout
             android:layout_width="wrap_content"
