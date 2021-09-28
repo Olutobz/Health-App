@@ -12,43 +12,66 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-        <ImageView
-            android:layout_width="98dp"
-            android:layout_height="88dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="12.31dp"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/left_pacing_nurse" />
 
-        <TextView
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="61dp"
-            android:fontFamily="@font/rock_b"
-            android:text="E-Health"
-            android:textAlignment="gravity"
-            android:textColor="#33cc99"
-            android:textSize="25sp" />
+            tools:context=".MainActivity">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:fontFamily="@font/rock_b"
-            android:text="Sign up to the best health emergency app to track your health, get health tips and get the services of medical professionals."
-            android:textAlignment="gravity"
-            android:textColor="#33cc99"
-            android:textSize="16sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginTop="-35dp"
+                android:src="@drawable/ellipse_two" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="13.38dp"
-            android:src="@drawable/elipse_one" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
 
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/left_pacing_nurse" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="E-Health"
+                    android:fontFamily="@font/motown"
+                    android:textColor="#33cc99"
+                    android:textSize="36dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="205dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Sign up to the best health emergency app to track your health, get health tips and get the services of medical professionals."
+                android:textAlignment="center"
+                android:textColor="#33cc99"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="225dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/elipse_one" />
+
+        </FrameLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -137,11 +160,11 @@
         </RelativeLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="193dp"
-            android:layout_height="63dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="23dp"
-            android:background="@drawable/button"
+            android:background="@drawable/green_rounded_border"
             android:fontFamily="@font/rock_b"
             android:text="Next"
             android:textAllCaps="false"
