@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.oauife.healthapp.R
 
-class SpecilistPageFragment : Fragment() {
+class SpecialistPageFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
