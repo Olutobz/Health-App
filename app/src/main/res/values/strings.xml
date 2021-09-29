@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">E-Health</string>
     <string name="image_doctor">Nurse Image</string>
@@ -13,4 +14,19 @@
     <string name="how_to_use_description">Sign Up as a user or specialist. Login and the app is ready to be used</string>
     <string name="features">Features</string>
     <string name="features_details">Monitor your health,Report as emergency, Access to medical professional and Receive health tips</string>
+    <string name="user">User</string>
+    <string name="specialist">Specialist</string>
+    <string name="full_name">Full Name</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="profession">Profession</string>
+    <string name="id_number">Id Number</string>
+    <string name="work_institute">Work Institute</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+    <string name="nin_optional">NIN (Optional)</string>
+    <string name="i_don_t_have_an_account">I don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="hi_olutobz">Hi! Olutobz</string>
+    <string name="what_do_you_need">What Do You Need?</string>
 </resources>
