@@ -2,18 +2,23 @@
 <resources>
     <string name="app_name">E-Health</string>
     <string name="image_doctor">Nurse Image</string>
-    <string name="text_sign_up_description">Sign up to the best health emergency app to track your health, get health tips and get the services of medical professionals.</string>
+    <string name="text_sign_up_description">Sign up to the best health emergency app to track your
+        health, get health tips and get the services of medical professionals.</string>
     <string name="eclipse_image">Eclipse Image</string>
     <string name="next">Next</string>
-    <string name="text_splash_info">Track your health, get connected to the best specialist within the shortest distance from you.</string>
+    <string name="text_splash_info">Track your health, get connected to the best specialist
+        within the shortest distance from you.</string>
     <string name="text_splash_header">The best in managing your health!</string>
     <string name="left_moving_doctor">Moving doctor</string>
-    <string name="text_header_description">Sign up to the best health emergency app to track your health, get health tips and get the services of medical professionals.</string>
+    <string name="text_header_description">Sign up to the best health emergency app to track your
+        health, get health tips and get the services of medical professionals.</string>
     <string name="right_doctor_image">Right Doctor Image</string>
     <string name="how_to_use">How to use</string>
-    <string name="how_to_use_description">Sign Up as a user or specialist. Login and the app is ready to be used</string>
+    <string name="how_to_use_description">Sign Up as a user or specialist. Login and the
+        app is ready to be used</string>
     <string name="features">Features</string>
-    <string name="features_details">Monitor your health,Report as emergency, Access to medical professional and Receive health tips</string>
+    <string name="features_details">Monitor your health,Report as emergency, Access to medical
+        professional and Receive health tips</string>
     <string name="user">User</string>
     <string name="specialist">Specialist</string>
     <string name="full_name">Full Name</string>
@@ -23,10 +28,12 @@
     <string name="work_institute">Work Institute</string>
     <string name="password">Password</string>
     <string name="already_have_an_account">Already have an account?</string>
-    <string name="log_in">Log in</string>
+    <string name="sign_in">Sign In</string>
     <string name="nin_optional">NIN (Optional)</string>
-    <string name="i_don_t_have_an_account">I don\'t have an account?</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="not_a_user">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
-    <string name="hi_olutobz">Hi! Olutobz</string>
+    <string name="instruction">Drink enough water today to regulate the body temperature</string>
+    <string name="hi_olutoba">Hi! Olutoba</string>
     <string name="what_do_you_need">What Do You Need?</string>
 </resources>
