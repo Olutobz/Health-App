@@ -1,70 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragments.SignUpFragment">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp">
+        android:orientation="vertical"
+    >
 
-        <TextView
-            android:id="@+id/splash_appName_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@id/linear_layout"
-            android:layout_alignParentEnd="true"
-            android:background="#33cc99"
-            android:text="@string/app_name"
-            android:textSize="33sp" />
-
-        <LinearLayout
-            android:id="@+id/linear_layout"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/doctor_image"
-                android:layout_width="match_parent"
+                android:id="@+id/elipse_quadrant_image"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/image_doctor"
+                android:contentDescription="@string/eclipse_image"
+                android:src="@drawable/ellipse_quadrant" />
+
+            <TextView
+                android:id="@+id/E_Health_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/running_doctor_image"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/rock"
+                android:text="@string/app_name"
+                android:textColor="@color/general_green"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/running_doctor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/left_moving_doctor"
                 android:src="@drawable/left_pacing_nurse" />
 
             <ImageView
                 android:id="@+id/eclipse_image"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="300dp"
                 android:contentDescription="@string/eclipse_image"
-                android:src="@drawable/ellipse_one" />
+                android:src="@drawable/elipse_one" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/splash_header_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="@string/text_splash_header"
-                android:textColor="#33cc99"
-                android:textSize="24sp"
+                android:textColor="@color/general_green"
+                android:textSize="@dimen/text_size"
                 android:textStyle="normal" />
 
             <TextView
                 android:id="@+id/splashInfo_text"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:gravity="center_horizontal"
                 android:text="@string/text_splash_info"
-                android:textColor="#33CC99" />
+                android:textAlignment="center"
+                android:textColor="@color/general_green"
+                android:textSize="@dimen/text_size"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/text_border"
+                android:minHeight="48dp"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
 
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/text_border"
-            android:text="@string/next" />
+    </LinearLayout>
 
-    </RelativeLayout>
 </layout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.SignInFragment">
+    tools:context=".ui.fragments.LoginFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -107,30 +107,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginTop="20dp"
             android:background="@drawable/border_auth"
             android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/full_name_edit_text"
+                style="@style/SignInEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:hint="@string/full_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_auth" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/email_edit_text"
                 style="@style/SignInEditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_marginTop="24dp"
-                android:hint="@string/e_mail">
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/border_auth"
-                    android:inputType="textEmailAddress" />
+                    android:background="@drawable/border_auth" />
+            </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nin_number_edit_text"
+                style="@style/SignInEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:hint="@string/nin_optional">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_auth" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/password_edit_text"
                 style="@style/SignInEditTextStyle"
                 android:layout_width="251dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="24dp"
                 android:hint="@string/password"
                 app:passwordToggleEnabled="true">
