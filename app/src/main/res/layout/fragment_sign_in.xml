@@ -7,103 +7,99 @@
     tools:context=".ui.fragments.SignInFragment">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <FrameLayout
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:context=".MainActivity">
 
             <ImageView
+                android:id="@+id/elipse_quadrant_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="-60dp"
+                android:layout_marginStart="-60dp"
                 android:layout_marginTop="-35dp"
-                android:src="@drawable/ellipse_two" />
+                android:contentDescription="@string/eclipse_image"
+                android:src="@drawable/ellipse_quadrant" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="5dp"
-                android:layout_gravity="center_horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/running_doctor_image"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/left_moving_doctor"
                     android:src="@drawable/left_pacing_nurse" />
 
                 <TextView
+                    android:id="@+id/E_Health_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_gravity="center_horizontal"
-                    android:text="E-Health"
-                    android:fontFamily="@font/motown"
-                    android:textColor="#33cc99"
-                    android:textSize="36dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/rock"
+                    android:text="@string/app_name"
+                    android:textColor="@color/general_green"
+                    android:textSize="36sp"
                     android:textStyle="bold" />
+
             </LinearLayout>
 
             <TextView
+                android:id="@+id/header_title_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="205dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/roboto_black"
-                android:text="Sign up to the best health emergency app to track your health, get health tips and get the services of medical professionals."
+                android:text="@string/text_header_description"
                 android:textAlignment="center"
-                android:textColor="#33cc99"
+                android:textColor="@color/general_green"
                 android:textSize="14sp" />
 
             <ImageView
+                android:id="@+id/eclipse_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="225dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="225dp"
+                android:contentDescription="@string/eclipse_image"
                 android:src="@drawable/elipse_one" />
 
-        </FrameLayout>
+        </RelativeLayout>
 
         <LinearLayout
-            android:layout_width="297dp"
-            android:layout_height="54dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:background="@drawable/border_frame"
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="103dp"
-                android:layout_height="27dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="9dp"
-                android:background="@drawable/button_border"
-                android:text="User"
-                android:fontFamily="@font/boboto_bold"
-                android:textAllCaps="false"
-                android:textColor="#33cc99" />
+                android:id="@+id/user_button"
+                style="@style/SignInButtonStyle"
+                android:background="@drawable/button_border_white"
+                android:text="@string/user"
+                android:textColor="@color/general_green" />
 
             <androidx.appcompat.widget.AppCompatButton
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="103dp"
-                android:layout_height="27dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="9dp"
-                android:fontFamily="@font/boboto_bold"
+                android:id="@+id/specialist_button"
+                style="@style/SignInButtonStyle"
                 android:background="@drawable/button_border_green"
-                android:text="Specialist"
-                android:textAllCaps="false"
-                android:textColor="#ffffff" />
-
+                android:text="@string/specialist"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
@@ -111,93 +107,88 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/layout_margin_top"
             android:background="@drawable/border_auth"
             android:orientation="vertical">
 
-
-
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_edit_text"
+                style="@style/SignInEditTextStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="23dp"
-                android:layout_marginLeft="23dp"
                 android:layout_marginTop="24dp"
-                android:id="@+id/email"
-                android:hint="E-Mail"
-                app:hintTextColor="#fa7f27"
-                android:textColorHint="#fa7f27"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:hint="@string/e_mail">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    android:background="@drawable/border_auth"/>
+                    android:background="@drawable/border_auth"
+                    android:inputType="textEmailAddress" />
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_edit_text"
+                style="@style/SignInEditTextStyle"
                 android:layout_width="251dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="23dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginBottom="24dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/work_institute"
-                app:passwordToggleEnabled="true"
-                android:hint="Password"
-                app:hintTextColor="#fa7f27"
-                android:textColorHint="#fa7f27"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:layout_marginBottom="24dp"
+                android:hint="@string/password"
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:background="@drawable/border_auth"/>
+                    android:background="@drawable/border_auth"
+                    android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/forgot_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="55dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/general_green"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/signIn_button"
+            style="@style/LoginButtonStyle"
             android:background="@drawable/green_rounded_border"
-            android:text="Login"
-            android:fontFamily="@font/boboto_bold"
-            android:textAllCaps="false"
-            android:textColor="#ffffff" />
+            android:text="@string/sign_in" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/no_account_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="I don't have an account?"
-                android:fontFamily="@font/boboto_bold"
-                android:textAlignment="gravity"
-                android:textColor="#33cc99"
-                android:textSize="12sp" />
+                android:text="@string/not_a_user"
+                android:textColor="@color/general_green"
+                android:textSize="12sp"
+                android:textStyle="normal" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signUp_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="50dp"
-                android:layout_height="18dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/button_border"
-                android:text="Sign Up"
-                android:textSize="12dp"
-                android:fontFamily="@font/boboto_bold"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border_white"
+                android:text="@string/sign_up"
                 android:textAllCaps="false"
-                android:textColor="#fa7f27"
-                style="?android:attr/borderlessButtonStyle"/>
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="12sp"
+                android:textStyle="normal" />
 
         </LinearLayout>
 
