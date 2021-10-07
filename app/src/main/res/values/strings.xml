@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">E-Health</string>
-    <string name="image_doctor">Nurse Image</string>
+    <string name="nurse_image">Nurse Image</string>
     <string name="text_sign_up_description">Sign up to the best health emergency app to track your
         health, get health tips and get the services of medical professionals.</string>
     <string name="eclipse_image">Eclipse Image</string>
@@ -33,7 +33,15 @@
     <string name="forgot_password">Forgot password?</string>
     <string name="not_a_user">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
-    <string name="instruction">Drink enough water today to regulate the body temperature</string>
+    <string name="drink_water_instruction">Drink enough water today to regulate the body temperature</string>
     <string name="hi_olutoba">Hi! Olutoba</string>
     <string name="what_do_you_need">What Do You Need?</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="ambulance_image">Ambulance Image</string>
+    <string name="telephone_image">Telephone Image</string>
+    <string name="call_for_help">Call for help</string>
+    <string name="consultation">Consultation</string>
+    <string name="medicine">Medicine</string>
+    <string name="cartoon_doctor_image">Cartoon Doctor Image</string>
+    <string name="top_doctors">Top Doctors</string>
 </resources>
