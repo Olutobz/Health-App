@@ -54,38 +54,218 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_container"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/hi_olutoba"
+                    android:textColor="@color/general_green"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/drink_instruction_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="@string/drink_water_instruction"
+                    android:textAlignment="center"
+                    android:textColor="@color/general_green"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/eclipse_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/eclipse_image"
+                    android:src="@drawable/elipse_one" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="25dp"
+            android:background="@drawable/rectangle_border_wb">
+
             <TextView
+                android:id="@+id/whatDoYouNeed_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/linear_container"
+                android:layout_margin="30dp"
+                android:text="@string/what_do_you_need"
+                android:textAlignment="textStart"
+                android:textColor="@color/general_green"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ambulance_layout"
+                android:layout_width="130dp"
+                android:layout_height="102dp"
+                android:layout_below="@id/whatDoYouNeed_text"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="30dp"
-                android:layout_marginBottom="-18dp"
-                android:text="@string/hi_olutoba"
-                android:textColor="@color/general_green"
-                android:textSize="@dimen/text_size" />
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rectangle_border_pbg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ambulance_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/ambulance_image"
+                    android:src="@drawable/ambulance" />
+
+                <TextView
+                    android:id="@+id/ambulance_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="@string/ambulance"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/telephone_layout"
+                android:layout_width="130dp"
+                android:layout_height="102dp"
+                android:layout_below="@id/whatDoYouNeed_text"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="25dp"
+                android:layout_toEndOf="@id/ambulance_layout"
+                android:background="@drawable/rectangle_border_purplebg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/telephone_image"
+                    android:src="@drawable/telephone" />
+
+                <TextView
+                    android:id="@+id/callForHelp_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="@string/call_for_help"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cartoonDoctor_layout"
+                android:layout_width="130dp"
+                android:layout_height="102dp"
+                android:layout_below="@id/ambulance_layout"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rectangle_border_darkblue_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cartoonDoctor_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/cartoon_doctor_image"
+                    android:src="@drawable/cartoon_doctor" />
+
+                <TextView
+                    android:id="@+id/consultation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="@string/consultation"
+                    android:textAlignment="center"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="102dp"
+                android:layout_below="@id/telephone_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="25dp"
+                android:layout_toEndOf="@id/cartoonDoctor_layout"
+                android:background="@drawable/border_frame"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/medicine_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/nurse_image"
+                    android:src="@drawable/pills" />
+
+                <TextView
+                    android:id="@+id/medicine_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="@string/medicine"
+                    android:textAlignment="center"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/header_title_text"
-                android:layout_width="match_parent"
+                android:id="@+id/topDoctors_text"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="205dp"
-                android:layout_marginRight="10dp"
-                android:fontFamily="@font/roboto_black"
-                android:text="@string/instruction"
-                android:textAlignment="center"
+                android:layout_below="@id/cartoonDoctor_layout"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/top_doctors"
                 android:textColor="@color/general_green"
-                android:textSize="14sp" />
-
-            <ImageView
-                android:id="@+id/eclipse_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="225dp"
-                android:contentDescription="@string/eclipse_image"
-                android:src="@drawable/elipse_one" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 
