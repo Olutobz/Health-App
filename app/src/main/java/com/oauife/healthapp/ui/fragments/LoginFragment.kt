@@ -1,10 +1,12 @@
 package com.oauife.healthapp.ui.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.oauife.healthapp.R
 
 
@@ -15,6 +17,12 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false)
+        val view = inflater.inflate(R.layout.fragment_login, container, false)
+        val signInButton = view.findViewById<Button>(R.id.signIn_button)
+        signInButton.setOnClickListener {
+            view?.findNavController()
+                ?.navigate(R.id.action_loginFragment_to_signInFragment)
+        }
+        return view
     }
 }

@@ -3,103 +3,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.fragments.SignUpFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-    >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/elipse_quadrant_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/eclipse_image"
-                android:src="@drawable/ellipse_quadrant" />
-
-            <TextView
-                android:id="@+id/E_Health_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@id/running_doctor_image"
-                android:layout_alignParentEnd="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginEnd="10dp"
-                android:fontFamily="@font/rock"
-                android:text="@string/app_name"
-                android:textColor="@color/general_green"
-                android:textSize="@dimen/header_text_size"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/running_doctor_image"
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="center_horizontal"
-                android:contentDescription="@string/left_moving_doctor"
-                android:src="@drawable/left_pacing_nurse" />
-
-            <ImageView
-                android:id="@+id/eclipse_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="300dp"
-                android:contentDescription="@string/eclipse_image"
-                android:src="@drawable/elipse_one" />
-
-        </RelativeLayout>
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="8dp"
-            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/splash_header_text"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="center"
-                android:text="@string/text_splash_header"
-                android:textColor="@color/general_green"
-                android:textSize="@dimen/text_size"
-                android:textStyle="normal" />
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/splashInfo_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/text_splash_info"
-                android:textAlignment="center"
-                android:textColor="@color/general_green"
-                android:textSize="@dimen/text_size"
-                android:textStyle="normal" />
+                <ImageView
+                    android:id="@+id/elipse_quadrant_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/eclipse_image"
+                    android:src="@drawable/ellipse_quadrant" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="193dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:background="@drawable/text_border"
-                android:minHeight="48dp"
-                android:text="@string/next"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="@dimen/text_size" />
+                <TextView
+                    android:id="@+id/E_Health_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/running_doctor_image"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/rock"
+                    android:text="@string/app_name"
+                    android:textColor="@color/general_green"
+                    android:textSize="@dimen/header_text_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/running_doctor_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/left_moving_doctor"
+                    android:src="@drawable/left_pacing_nurse" />
+
+                <ImageView
+                    android:id="@+id/eclipse_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="300dp"
+                    android:contentDescription="@string/eclipse_image"
+                    android:src="@drawable/elipse_one" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/splash_header_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="@string/text_splash_header"
+                    android:textColor="@color/general_green"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/splashInfo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_splash_info"
+                    android:textAlignment="center"
+                    android:textColor="@color/general_green"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/next_button"
+                    android:layout_width="193dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/text_border"
+                    android:minHeight="48dp"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
 </layout>
