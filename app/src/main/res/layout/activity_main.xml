@@ -1,213 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:orientation="vertical"
-            tools:context=".MainActivity">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <RelativeLayout
+            <!-- Layout to contain contents of main body of screen -->
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/myNavHost_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:context=".MainActivity">
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/navigation_graph" />
 
-                <ImageView
-                    android:id="@+id/elipse_quadrant_image"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="-60dp"
-                    android:layout_marginTop="-35dp"
-                    android:contentDescription="@string/eclipse_image"
-                    android:src="@drawable/ellipse_quadrant" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/running_doctor_image"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginStart="10dp"
-                        android:contentDescription="@string/left_moving_doctor"
-                        android:src="@drawable/left_pacing_nurse" />
-
-                    <TextView
-                        android:id="@+id/E_Health_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_margin="10dp"
-                        android:fontFamily="@font/rock"
-                        android:text="@string/app_name"
-                        android:textColor="@color/general_green"
-                        android:textSize="36sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/drink_instruction_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="205dp"
-                    android:layout_marginRight="10dp"
-                    android:fontFamily="@font/roboto_black"
-                    android:text="@string/text_header_description"
-                    android:textAlignment="center"
-                    android:textColor="@color/general_green"
-                    android:textSize="14sp" />
-
-                <ImageView
-                    android:id="@+id/eclipse_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="225dp"
-                    android:contentDescription="@string/eclipse_image"
-                    android:src="@drawable/elipse_one" />
-
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/text_border">
-
-                    <ImageView
-                        android:id="@+id/how_to_use_moving_doctor_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:contentDescription="@string/right_doctor_image"
-                        android:src="@drawable/right_moving_doctor" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:layout_margin="8dp"
-                        android:layout_toEndOf="@id/how_to_use_moving_doctor_image"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/how_to_use_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_margin="8dp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/rock_b"
-                            android:gravity="center_horizontal"
-                            android:text="@string/how_to_use"
-                            android:textColor="@color/white"
-                            android:textSize="25sp" />
-
-                        <TextView
-                            android:id="@+id/how_to_use_desc_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:fontFamily="@font/rock_b"
-                            android:text="@string/how_to_use_description"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/white" />
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="@drawable/text_border">
-
-                    <ImageView
-                        android:id="@+id/features_moving_doctor_feat_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:contentDescription="@string/right_doctor_image"
-                        android:src="@drawable/right_moving_doctor" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:layout_margin="8dp"
-                        android:layout_toEndOf="@id/features_moving_doctor_feat_image"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/features_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:layout_margin="8dp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/rock_b"
-                            android:gravity="center_horizontal"
-                            android:text="@string/features"
-                            android:textColor="@color/white"
-                            android:textSize="25sp" />
-
-                        <TextView
-                            android:id="@+id/features_details_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:fontFamily="@font/rock_b"
-                            android:text="@string/features_details"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/white" />
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/next_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:background="@drawable/button_border_green"
-                android:fontFamily="@font/rock_b"
-                android:text="@string/next"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
         </LinearLayout>
-
-    </ScrollView>
 
 </layout>
