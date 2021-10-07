@@ -38,6 +38,7 @@
         <entry key="app/src/main/res/layout/fragment_specialist_page.xml" value="0.21920289855072464" />
         <entry key="app/src/main/res/layout/fragment_user_login.xml" value="0.20742753623188406" />
         <entry key="app/src/main/res/layout/fragment_user_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_welcome_screen.xml" value="0.19882246376811594" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26974358974358975" />
       </map>
     </option>
