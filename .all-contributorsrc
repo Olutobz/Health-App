@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Olutobz",
+      "name": "Onikoyi Damola Olutoba",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37094821?v=4",
+      "profile": "https://github.com/Olutobz",
+      "contributions": [
+        "test",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "E-Health",
+  "projectOwner": "pmcrg-oau",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
