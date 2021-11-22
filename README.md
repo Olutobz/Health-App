@@ -16,6 +16,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://github.com/Olutobz"><img src="https://avatars.githubusercontent.com/u/37094821?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Onikoyi Damola Olutoba</b></sub></a><br /><a href="https://github.com/pmcrg-oau/E-Health/commits?author=Olutobz" title="Tests">⚠️</a> <a href="#maintenance-Olutobz" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://chinexboroja24.hashnode.dev/"><img src="https://avatars.githubusercontent.com/u/61055200?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ihedioha Chinedu Innocent</b></sub></a><br /><a href="https://github.com/pmcrg-oau/E-Health/commits?author=Chinex-Boroja" title="Code">💻</a> <a href="#maintenance-Chinex-Boroja" title="Maintenance">🚧</a></td>
   </tr>
 </table>
