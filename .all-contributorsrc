@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Chinex-Boroja",
+      "name": "Ihedioha Chinedu Innocent",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61055200?v=4",
+      "profile": "https://chinexboroja24.hashnode.dev/",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "E-Health",
+  "projectOwner": "pmcrg-oau",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
